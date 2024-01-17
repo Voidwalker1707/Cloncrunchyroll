@@ -16,8 +16,14 @@
     background-color:black ;
 }
 
+.carousel-height img{
+    height: 70% ;
     
-    
+}
+
+.Liked {
+    margin-bottom: 50px;
+}
 
 .Enlace img{
     width: 30px;
@@ -57,7 +63,7 @@ body{
     height: 600px;
     background: radial-gradient(rgb(219, 150, 94),rgb(231, 110, 30))
 }
-.contenedor{
+.contenedor-slider{
     margin: auto;
     width: 800px;
     height: 500px;
@@ -93,18 +99,36 @@ ul.slider :first-child{
 ul.slider li:target{
     opacity: 1;
 }
+
+.botones{
+    padding: 40px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+    height: 100%;       
+}
+
 .menu li a{
     text-decoration: none;
     color: white;
     background-color: rgb(68, 61, 61);
     border-top: solid orange;
     padding: 20px;
+    height: 5rem;
     
 }
-.botones{
-    padding: 40px;
-    display:flex;
-    justify-content: space-around;       
+
+.menu ul {
+    display: column;
+}
+
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    height: 5rem;
 }
 
 .menu li a:hover{
@@ -159,11 +183,11 @@ ul.slider li:target{
     padding-bottom:60px; ;
 }
 .pgimg img{
-    width: 1000px;
+    width: 90%;
 }
 .nuevo img{
-    width:1920px ;
-    height:880px ;
+    width:99vw ;
+    height:75vh ;
     
 }
 footer img{
@@ -190,9 +214,65 @@ footer{
     background: linear-gradient(rgb(66, 64, 64), black);
 }
 
+@media screen and (max-width: 967px) {
+    .botones{
+        display: block;
+    }
+}
 
+@media screen and (max-width: 1280px) {
+    #uno,#dos, #tres{
+        display: none;
+    }
+    .lista h1{
+        margin-right: 100px;
+    }
 
-/*.nuevo div{
-    background-image:url(fondo.png) ;
+}
+@media screen and (max-width: 1015px) {
+    .a{
+        display: none;
+    }
+
+    .header{
+        justify-content: center;
+    }
+    .lista h1{
+        display: none;
+    }
+
+}
+
+@media (max-width: 988px) {
+    .rec {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      justify-content: center;
+      align-items: center;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    .texto{
+        display: none;
+    }
+    .Liked {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-rows: auto;
+        justify-content: center;
+        gap: 16px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
     
-}/*
+    .texto2{
+        display: none;
+    }
+      
+  }
+
+
+  @media screen and (max-width: 412px) {
+    .rec{
+        margin-left: 150px;
+    }
+}

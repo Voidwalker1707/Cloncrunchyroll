@@ -5,67 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crunchyroll</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="Style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="barra">
-            <a href="#"class="Enlace"><img src="Crunchyroll_Logo.png" alt="logo"></a>
-            <a href="#"class="Enlace">Explorar</a>
-            <a href="#"class="Enlace">Manga</a>
-            <a href="#"class="Enlace">Juegos</a>
-            <a href="#"class="Enlace">Noticias</a>
+            <a href="#"class="Enlace"><img src="img/Crunchyroll_Logo.png" alt="logo"></a>
+            <a href="#"class="Enlace a">Explorar</a>
+            <a href="#"class="Enlace a">Manga</a>
+            <a href="#"class="Enlace a">Juegos</a>
+            <a href="#"class="Enlace a">Noticias</a>
             
     
         
         </nav>
         <nav class="barra2">
-            <a href="#"class="Enlace"><img src="lupa.png" alt="lupa"></a>
-            <a href="#"class="Enlace"><img src="Bookmark_icon_white.svg.png" alt="Favoritos"></a>
-            <a href="#"class="Enlace"><img src="hime.png" alt="perfil"></a>
+            <a href="#"class="Enlace" id="uno"><img src="img/lupa.png" alt="lupa"></a>
+            <a href="#"class="Enlace" id="dos"><img src="img/Bookmark_icon_white.svg.png" alt="Favoritos"></a>
+            <a href="#"class="Enlace"><img id="tres" src="img/hime.png" alt="perfil"></a>
         </nav>
     </header>
-    <main class="principal">
-        <div class="contenedor">
-            <ul class="slider">
-                <li id="slide1">
-                    <img src="kimetsu.jpe" alt="">
-                </li>
-                <li id="slide2">
-                    <img src="classroom.jpe" alt="">
-                </li>
-                <li id="slide3">
-                    <img src="aot.jpe" alt="">
-                </li>
-                <li id="slide4">
-                    <img src="dbz.jpe" alt="">
-                </li>
-            </ul>
-            
+        <section>
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel-height" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/aot.jpe" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/kimetsu.jpe" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/classroom.jpe" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/dbz.jpe" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </main>
-    <main>
-        <div class="botones">
-            <ul class="menu">
-                <li>
-                    <a href="#slide1">Kimetsu no yaiba: To The Swordsmith Village</a>
-                    <a href="#slide2">Classroom of the elite: Segunda temporada</a>
-                    <a href="#slide3">Attack on titan: The final chapters</a>
-                    <a href="#slide4">Dragon ball z: La saga de freezer</a>
-                </li>
-            </ul>
-        </div>
-    </main>
+        </section>
     <main class="recomendados">
         <div class="lista">
             <h1>Nuestras recomendaciones</h1>
             <ul class="rec">
-                <li class="imagenes"><img src="1.PNG" alt=""></li>
-                <li class="imagenes"><img src="2.PNG" alt=""></li>
-                <li class="imagenes"><img src="3.PNG" alt=""></li>
-                <li class="imagenes"><img src="4.PNG" alt=""></li>
-                <li class="imagenes"><img src="5.PNG" alt=""></li>
-                <li class="imagenes"><img src="6.PNG" alt=""></li>
+                <li class="imagenes"><img src="img/1.PNG" alt=""></li>
+                <li class="imagenes"><img src="img/2.PNG" alt=""></li>
+                <li class="imagenes"><img src="img/3.PNG" alt=""></li>
+                <li class="imagenes"><img src="img/4.PNG" alt=""></li>
+                <li class="imagenes"><img src="img/5.PNG" alt=""></li>
+                <li class="imagenes"><img src="img/1.PNG" alt=""></li>
                 <li class="texto">hundred</li>
                 <li class="texto">In another world</li>
                 <li class="texto">maken it</li>
@@ -80,32 +77,35 @@
         <img src="portada.PNG" alt="">
     </main>
     <main class="Favoritos"></main>
-        <div class="fav"></div>
+        <div class="fav">
+
+        </div>
             
             <ul class="Liked">
-                <li class="imgs"><img src="7.PNG" alt=""></li>
-                <li class="imgs"><img src="8.PNG" alt=""></li>
-                <li class="imgs"><img src="9.PNG" alt=""></li>
-                <li class="imgs"><img src="10.PNG" alt=""></li>
+                <li class="imgs"><img src="img/7.PNG" alt=""></li>
+                <li class="imgs"><img src="img/8.PNG" alt=""></li>
+                <li class="imgs"><img src="img/9.PNG" alt=""></li>
+                <li class="imgs"><img src="img/10.PNG" alt=""></li>
                 <li class="texto2">bluelock</li>
                 <li class="texto2">spy x family</li>
                 <li class="texto2">bknha</li>
                 <li class="texto2">horimiya</li>
             </ul>
     <main class="nuevo">
-        <img id="fondo" src="fondo.png" alt="">  
+        <img id="fondo" src="img/fondo.png" alt="">  
             <div class="advices">
 
             </div>
     </main>
     <footer>
         <h2>Conecta con nosotros</h2>
-            <a href="#"><img src="yt.png" alt="">youtube</a>
-            <a href="#"><img src="facebook.png" alt="">facebook</a>
-            <a href="#"><img src="twitter.png" alt="">twitter</a>
-            <a href="#"><img src="tiktok-white-logo-A8BB0A84C6-seeklogo.com.png" alt="">tikTok</a>
-            <a href="#"><img src="ig.png" alt="">instagram</a>
+            <a href="#"><img src="img/yt.png" alt="">youtube</a>
+            <a href="#"><img src="img/facebook.png" alt="">facebook</a>
+            <a href="#"><img src="img/twitter.png" alt="">twitter</a>
+            <a href="#"><img src="img/tiktok-white-logo-A8BB0A84C6-seeklogo.com.png" alt="">tikTok</a>
+            <a href="#"><img src="img/ig.png" alt="">instagram</a>
             
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
